@@ -1,5 +1,7 @@
 import random
 
+# import modelo.posicoes
+
 numero = random.randint(1, 10)
 contador = 3
 
@@ -7,9 +9,11 @@ print("Jogo: Acerte o numero. Você tem 3 palpites")
 print("Um numero aleatório entre 0 e 10 foi gerado")
 
 while contador != 0:
+
     print("Chances:", contador)
     print(numero)
     palpite = int(input("Digite seu palpite: "))
+    print("---------------------------------------")
 
     if 11 < palpite < 100:
         print("Numero fora da escala imbecil!")
@@ -29,10 +33,7 @@ while contador != 0:
         break
 
     if contador == 0:
-        print("Voce perdeu, numeor de chances excedido")
-        print("O numeor era:",numero)
-
-
-
+        print("Voce perdeu, numero de chances excedido")
+        print("O numeor era:", numero)
 
 # print(help(random))
